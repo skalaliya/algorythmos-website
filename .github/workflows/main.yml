@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    with:
+    submodules: true  # Ensures submodules are checked out
     - name: Install dependencies
       run: npm install
     - name: Run Grunt
